@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Traduzir Imagem de HQ",
+  "version": "1.0",
+  "description": "Traduz texto em imagens de HQ",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["popup.js"]
+  }],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
